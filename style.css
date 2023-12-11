@@ -1,0 +1,215 @@
+#titulo {
+    color:hotpink;
+}
+
+p.texto {
+    color:blueviolet;
+}
+
+p.especial {
+    color:blue;
+}
+
+div p {
+    color:aquamarine;
+}
+
+div h2, div h3 {
+    color:coral;
+}
+
+* {
+    font-size: 24px;
+}
+
+/*nunca mires a un tulipán a los ojos*/
+/*
+
+.color {
+    color:#ff0000;
+    .color {
+    color:rgb(0, 250, 255);
+}
+}
+*/
+.color {
+    /* border: 5px black dotted; */
+    /*
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    outset
+    none
+    hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+    background-color: rgba(255, 0, 0);
+    opacity: 0.3;
+    height: 200px;
+    background: #f00 url(img.css/haewon.png) repeat-y center bottom / 100px 100px;
+    /*
+    top
+    center
+    bottom
+    */
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+    overflow: scroll;
+    /*
+    scroll: pondrá barra para deslizar y ver el contenido.
+    visible: no pasa nada.
+    hidden: lo que sobresalga del cuadrado, lo va a ocultar.
+    */
+    outline: 1px solid pink;
+}
+
+.text {
+    font-family: 'Dancing Script';
+    text-align: center;
+    text-decoration: line-through;
+    text-shadow: 3px 5px 5px blueviolet;
+}
+
+a:link {
+    color: darkgreen;
+}
+
+a:visited {
+    color:fuchsia
+}
+
+a:hover {
+    color:deepskyblue
+}
+
+/*este es el estado de cuando pasamos el mouse por encima*/
+
+a:active {
+    color:yellowgreen
+}
+
+/*este es de cuando lo clickeamos*/
+
+ul {
+    background-color: blueviolet;
+    list-style-type: square;
+/*     padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    /*el 100% indica que usará todo el ancho de la pág*/
+    border-collapse: collapse;
+    /*hará que los bordes sean finos*/
+    padding: 5px;
+}
+
+th, td {
+    border: solid 1px #eee
+}
+
+th {
+    background-color: peru;
+    color: white;
+    text-align: left;
+    /*
+    color del fondo
+    color de la fuente
+    alinear las palabras
+    */
+}
+
+tr:nth-child(even) {
+    background-color: steelblue;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: cornflowerblue;
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    position: sticky;
+    /*
+    static: valor por defecto.
+
+    absolute: no se mueve.
+    se queda quieto a lo que
+    tenga más cercano.
+
+    sticky:relative y fixed juntos.
+
+    relative: es para, por ej,
+    que tenga un espacio al comienzo.
+
+    fixed: hace que quede pegado en
+    un mismo lugar de la pantalla,
+    sin meverse a pesar de que movamos
+    el cursor.
+    */
+    left: 20px;
+    top: 25px;
+    /* top: 25px; */
+}
+
+.left {
+    float: left;
+    /*lo mueve hacia donde indiquemos*/
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+/*1:38:03 'Float'*/
+
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: chartreuse;
+}
